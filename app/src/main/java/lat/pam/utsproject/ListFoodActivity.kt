@@ -1,5 +1,6 @@
 package lat.pam.utsproject
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -31,6 +32,7 @@ class ListFoodActivity : AppCompatActivity() {
 
         adapter = FoodAdapter(foodList)
         recyclerView.adapter = adapter
+
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
